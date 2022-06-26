@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aigain</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <script type="module">
+        import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+</head>
+
+<body dir="rtl">
+    <div class="hero-desktop hidden lg:block container mx-auto pb-48">
+        <div class="hero flex w-full gap-x-16 mb-10">
+            <div class="flex flex-col w-1/2 items-center justify-center gap-y-5">
+                <div class="flex justify-start w-full">
+                    <img src="./assets/hero-massager.svg" alt="masager" class="w-full h-[460px]"
+                        data-modal-toggle="img-modal-slider">
+                </div>
+                <div class="flex gap-x-4 w-full">
+                    <img src="./assets/hero-place.png" alt="placeholder" class="w-1/4">
+                    <img src="./assets/hero-place.png" alt="placeholder" class="w-1/4">
+                    <img src="./assets/hero-place.png" alt="placeholder" class="w-1/4">
+                    <img src="./assets/hero-place.png" alt="placeholder" class="w-1/4">
+                </div>
+            </div>
+            <div class="w-1/2 text-right">
+                <h1 class="text-cus-gray text-45 font-medium leading-none tracking-tight mb-1">Aigain</h1>
+                <h2 class="text-cus-gray text-3xl leading-none">Beautiful Aging</h2>
+                <div class="flex justify-start my-5">
+                    <img src="./assets/stars.png" alt="stars" class="">
+                </div>
+                <h1 class="text-cus-red text-45 font-medium">2,880 ₪</h1>
+                <p class="">
+                    <img src="" alt="">
+                    נמצא במלאי
+                </p>
+                <p class="text-[25px] font-medium text-black mb-3">
+                    הדגם החדש והמתקדם ביותר – יותר עוצמה בכל טיפול!
+                </p>
+                <p class="text-xl text-black font-medium">
+                    בי-קיור לייזר פרו מתאים לשימוש מקצועי בבתי חולים וקליניקות ולשימוש ביתי.
+                </p>
+                <p class="text-xl text-black font-medium mb-6">
+                    בי-קיור לייזר פרו מתאים לשימוש מ
+                </p>
+                <p class="text-xl text-black">
+                    <span class="text-cus-red">•</span>
+                    משלוח עד שני ימי עסקים
+                </p>
+                <p class="text-xl text-black">
+                    <span class="text-cus-red">•</span>
+                    60 ימי התנסות בכפוף לתקנון*
+                </p class>
+                <p class="text-xl text-black">
+                    <span class="text-cus-red">•</span>
+                    24 חודשי אחריות
+                </p>
+                <p class="text-xl text-black">
+                    <span class="text-cus-red">•</span>
+                    סטנד בי-קיור מקורי (שווי של 240 ש”
+                </p>
+                <p class="text-xl text-black">
+                    <span class="text-cus-red">•</span>
+                    הדרכה אישית עם נציג מקצועי
+                </p>
+                <div class="flex gap-x-5 justify-start my-6">
+                    <button
+                        class="bg-cus-red text-white block w-[154px] pt-1.5 pb-[11px] rounded-2xl leading-none text-[25px] font-medium tracking-[-1px]">
+                        הזמן עכשיו
+                    </button>
+                    <button
+                        class="block w-[154px] pt-1.5 pb-[11px] rounded-2xl leading-none text-[25px] font-medium tracking-[-1px] border border-black">
+                        + 1 -
+                    </button>
+                </div>
+                <div class="flex items-center justify-start gap-x-5 mb-5">
+                    <div class="flex flex-col justify-center">
+                        <div
+                            class="rounded-full leading-none bg-[#e8e8e8] text-center flex flex-col justify-center w-14 h-14 ">
+                            <span class="text-2xl leading-none">60</span>
+                            <span class="text-base leading-none">
+                                יום נסיו
+                            </span>
+                        </div>
+                        <p class="text-sm leading-none text-center">בכפוף <br> התקנון</p>
+                    </div>
+                    <div class="flex flex-col justify-center ">
+                        <div
+                            class="rounded-full text-[28px] leading-none bg-[#e8e8e8] w-14 h-14 flex items-center justify-center">
+                            <img src="./assets/hand.png" alt="hand" class="w-10 self">
+                        </div>
+                        <p class="text-sm leading-none text-center">בכפוף <br> התקנון</p>
+
+                    </div>
+                    <div class="flex flex-col justify-center">
+                        <div
+                            class="rounded-full text-[28px] leading-none bg-[#e8e8e8] w-14 h-14 flex items-center justify-center">
+                            <img src="./assets/box.png" alt="box" class="w-11 h-11">
+                        </div>
+                        <p class="text-sm leading-none text-center">בכפוף <br> התקנון</p>
+                    </div>
+                </div>
+            </div>
+            <div id="img-modal-slider" tabindex="-1" aria-hidden="true"
+                class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full">
+                <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
+                    <!-- Modal content -->
+                    <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                        <!-- Modal header -->
+                        <div dir="ltr"
+                            class="flex justify-between items-start p-4 rounded-t border-b dark:border-gray-600">
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                About Video
+                            </h3>
+                            <button type="button"
+                                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                                data-modal-toggle="img-modal-slider">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="p-6 space-y-6">
+                            <!-- Slider main container -->
+                            <div class="swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <img src="./assets/hero-massager.svg" alt="img">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./assets/hero-massager.svg" alt="img">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./assets/hero-massager.svg" alt="img">
+                                    </div>
+                                    ...
+                                </div>
+                                <!-- If we need pagination -->
+                                <div class="swiper-pagination"></div>
+
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex gap-x-16">
+            <div class="w-1/2 text-right">
+                <h1 class="text-cus-red text-2xl">
+                    ה־AiGAiN פועל בשני מישורים:
+                </h1>
+                <p class="text-lg leading-none mb-3.5">
+                    <span class="font-bold"> בטווח המיידי -</span>
+                    הטיפול יכול להעניק לעור מראה חלק יותר כבר עם סיומו.
+                    הפחתת הקמטים ומיצוק עור הפנים עשויים להיות מורגשים כתוצאה מטיפול עקבי של מספר שבועות,
+                    <br>
+                    <span class="font-bold">בטווח הארוך -</span>
+                    בהתאם לתכנית הטיפול
+                    המומלצת.
+                </p>
+                <p class="text-lg leading-none mb-3.5">
+                    <span class="font-bold">
+                        • מודד
+                    </span>
+                    את הטמפרטורה בתוך האלקטרודות בכל רגע נתון, לבטיחות מקסימלית ולטיפול אפקטיבי
+                </p>
+                <p class="text-lg leading-none mb-2.5">
+                    <span class="font-bold">• מלאכותית</span>
+                    לומד וזוכר את המאפיינים הייחודיים (ההתנגדות החשמלית של עור הפנים) באמצעות אינטליגנציה
+                    ובאמצעותה מדייק את
+                    הטיפול האישי משימוש לשימוש
+                </p>
+                <p class="text-lg leading-none mb-3.5">
+                    <span class="font-bold">•מזהה בזמן אמת </span>
+                    את אזור הפנים המטופל ומחליט בכל רגע אלו שתי אלקטרודות להפעיל, על מנת לשחרר את רמת
+                    האנרגיה האופטימלית לכל
+                    אזור טיפול
+
+                </p>
+                <p class="text-lg leading-none mb-3.5">
+                    <span class="font-bold">
+                        מאפשר עומקים
+                    </span>
+                    שונים של חדירת אנרגיה, הודות למבנה הא־סימטרי הייחודי של האלקטרודות •
+                </p>
+            </div>
+            <div class="w-1/2 text-right">
+                <h2 class="text-cus-red text-2xl">Aigain - טיפול מותאם אישית למיצוק עור הפנים ולהפחתת קמטים</h2>
+                <p class="mb-4 text-lg leading-none">
+                    מכשיר רפואי־קוסמטי חכם לשימוש ביתי, שמסייע בהפחתת קמטים. בזכות טכנולוגיית הבינה המלאכותית, המכשיר
+                    מתאים
+                    את הטיפול באופן
+                    אישי לעור פניך, להשגת תוצאות מרביות של מראה טבעי יפה ובריא יותר
+                </p>
+                <p class="mb-4 text-lg leading-none">
+                    הודות לטכנולוגיות ה־RF וה־Ai הייחודיות ל־AiGAiN, המכשיר לומד את מאפייני פניך ומדייק את הטיפול בקמטים
+                    ובמיצוק העור מטיפול
+                    לטיפול. באופן זה יעילות הטיפולים הולכת וגדלה משימוש לשימוש.  
+                </p>
+                <p class="mb-4 text-lg leading-none">
+                    של העור באמצעות אלקטרודות א־סימטריות ייחודיות. אנרגיה זו מעוררת תהליך, שמחזק את הקולגן הקיים בעור
+                    ושמגביר ייצור קולגן
+                    חדש. תהליך זה עשוי לסייע בהפחתת הופעתם של קמטים חדשים בעור הפנים ובהחלקת קמטים קיימים, תוך מיצוק
+                    ושיפור
+                    מראה ומרקם העור.
+                    בסופו של התהליך נוצרת רקמה חדשה של סיבי הקולגן. תהליך זה נקרא
+                </p>
+            </div>
+        </div>
+        <div class="flex justify-start gap-x-20 mt-24">
+            <div class="w-64 text-right">
+                <p class="text-cus-red text-xl font-light leading-[24px]">
+                    כיצד פועל המכשיר על העור?
+                </p>
+                <p class="text-xl eading-[24px]">
+                    הקולגן בגוף, שמעניק לעור הפנים נפח וגמישות ומקנה לו מראה טבעי ובריא יותר.
+                </p>
+            </div>
+            <div class="flex flex-col justify-center items-center max-w-xl w-full">
+                <img src="./assets/instruction-1.png" alt="instruction-1" class="w-full">
+                <img src="./assets/instruction-1.1.png" alt="instruction-1.1" class="w-3/5 mt-14">
+            </div>
+            <div class="max-w-sm w-full text-center">
+                <p class="text-cus-red text-2xl font-light leading-none mb-9">
+                    עומק החדירה לעור
+                </p>
+                <img src="./assets/instruction-2.png" alt="instruction-2" class="w-full">
+            </div>
+        </div>
+    </div>
+    <div class="hero-mobile lg:hidden">
+        <div class="px-5">
+            <h1 class="text-cus-gray text-45 font-medium leading-none tracking-tight mb-1">Aigain</h1>
+            <h2 class="text-cus-gray text-3xl leading-none">Beautiful Aging</h2>
+            <div class="flex justify-start my-5">
+                <img src="./assets/stars.png" alt="stars" class="">
+            </div>
+        </div>
+        <div class="p-6 space-y-6">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="./assets/hero-massager.svg" alt="img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/hero-massager.svg" alt="img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/hero-massager.svg" alt="img">
+                    </div>
+                    ...
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+        </div>
+        <div class="px-5 flex flex-col">
+            <p class="text-[25px] font-medium text-black mb-2">
+                הדגם החדש והמתקדם ביותר – יותר עוצמה בכל טיפול!
+            </p>
+            <p class="text-xl text-black">
+                בי-קיור לייזר פרו מתאים לשימוש מקצועי בבתי חולים וקליניקות ולשימוש ביתי.
+            </p>
+            <p class="text-xl text-black">
+                <span class="text-cus-red">•</span>
+                משלוח עד שני ימי עסקים
+            </p>
+            <p class="text-xl text-black">
+                <span class="text-cus-red">•</span>
+                60 ימי התנסות בכפוף לתקנון*
+            </p class>
+            <p class="text-xl text-black">
+                <span class="text-cus-red">•</span>
+                24 חודשי אחריות
+            </p>
+            <p class="text-xl text-black">
+                <span class="text-cus-red">•</span>
+                סטנד בי-קיור מקורי (שווי של 240 ש”
+            </p>
+            <p class="text-xl text-black">
+                <span class="text-cus-red">•</span>
+                הדרכה אישית עם נציג מקצועי
+            </p>
+            <div class="flex items-center justify-center gap-x-5 my-16">
+                <div class="flex flex-col justify-center">
+                    <div
+                        class="rounded-full leading-none bg-[#e8e8e8] text-center flex flex-col justify-center w-14 h-14 ">
+                        <span class="text-2xl leading-none">60</span>
+                        <span class="text-base leading-none">
+                            יום נסיו
+                        </span>
+                    </div>
+                    <p class="text-sm leading-none text-center">בכפוף <br> התקנון</p>
+                </div>
+                <div class="flex flex-col justify-center ">
+                    <div
+                        class="rounded-full text-[28px] leading-none bg-[#e8e8e8] w-14 h-14 flex items-center justify-center">
+                        <img src="./assets/hand.png" alt="hand" class="w-10 self">
+                    </div>
+                    <p class="text-sm leading-none text-center">בכפוף <br> התקנון</p>
+
+                </div>
+                <div class="flex flex-col justify-center">
+                    <div
+                        class="rounded-full text-[28px] leading-none bg-[#e8e8e8] w-14 h-14 flex items-center justify-center">
+                        <img src="./assets/box.png" alt="box" class="w-11 h-11">
+                    </div>
+                    <p class="text-sm leading-none text-center">בכפוף <br> התקנון</p>
+                </div>
+            </div>
+            <div class="flex gap-x-6 self-center items-center">
+                <button
+                    class="block w-[154px] pt-1 pb-2 h-11 rounded-2xl leading-none text-[25px] font-medium tracking-[-1px] border border-black">
+                    + 1 -
+                </button>
+                <h1 class="text-cus-red text-45 font-medium">2,880 ₪</h1>
+            </div>
+        </div>
+        <div class="px-5 md:flex md:flex-col items-center">
+            <button
+                class="bg-cus-red my-5 text-white block w-full md:w-56 pt-1.5 pb-[11px] rounded-2xl leading-none text-[25px] font-medium tracking-[-1px]">
+                הזמן עכשיו
+            </button>
+            <div class="flex justify-center items-start mb-10">
+                <input type="checkbox" name="checkbox" id="checkbox" class="w-4 h-4" checked>
+                <label for="checkbox" class="text-lg leading-none">נמצא במלאי</label>
+            </div>
+            <div class="flex flex-col gap-x-16">
+
+                <div class="text-right">
+                    <h2 class="text-cus-red text-2xl">Aigain - אישית למיצוק עור הפנים ולהפחתת קמטים</h2>
+                    <p class="mb-4 text-lg leading-none">
+                        מכשיר רפואי־קוסמטי חכם לשימוש ביתי, שמסייע בהפחתת קמטים. בזכות טכנולוגיית הבינה המלאכותית,
+                        המכשיר
+                        מתאים
+                        את הטיפול באופן
+                        אישי לעור פניך, להשגת תוצאות מרביות של מראה טבעי יפה ובריא יותר
+                    </p>
+                    <p class="mb-4 text-lg leading-none">
+                        הודות לטכנולוגיות ה־RF וה־Ai הייחודיות ל־AiGAiN, המכשיר לומד את מאפייני פניך ומדייק את הטיפול
+                        בקמטים
+                        ובמיצוק העור מטיפול
+                        לטיפול. באופן זה יעילות הטיפולים הולכת וגדלה משימוש לשימוש.  
+                    </p>
+                    <p class="mb-4 text-lg leading-none">
+                        של העור באמצעות אלקטרודות א־סימטריות ייחודיות. אנרגיה זו מעוררת תהליך, שמחזק את הקולגן הקיים
+                        בעור
+                        ושמגביר ייצור קולגן
+                        חדש. תהליך זה עשוי לסייע בהפחתת הופעתם של קמטים חדשים בעור הפנים ובהחלקת קמטים קיימים, תוך מיצוק
+                        ושיפור
+                        מראה ומרקם העור.
+                        בסופו של התהליך נוצרת רקמה חדשה של סיבי הקולגן. תהליך זה נקרא
+                    </p>
+                </div>
+                <div class=" text-right">
+                    <h1 class="text-cus-red text-2xl my-5">
+                        ה־AiGAiN פועל בשני מישורים:
+                    </h1>
+                    <p class="text-lg leading-none mb-3.5">
+                        <span class="font-bold"> בטווח המיידי -</span>
+                        הטיפול יכול להעניק לעור מראה חלק יותר כבר עם סיומו.
+                        הפחתת הקמטים ומיצוק עור הפנים עשויים להיות מורגשים כתוצאה מטיפול עקבי של מספר שבועות,
+                        <br>
+                        <span class="font-bold">בטווח הארוך -</span>
+                        בהתאם לתכנית הטיפול
+                        המומלצת.
+                    </p>
+                    <p class="text-lg leading-none mb-3.5">
+                        <span class="font-bold">
+                            • מודד
+                        </span>
+                        את הטמפרטורה בתוך האלקטרודות בכל רגע נתון, לבטיחות מקסימלית ולטיפול אפקטיבי
+                    </p>
+                    <p class="text-lg leading-none mb-2.5">
+                        <span class="font-bold">• מלאכותית</span>
+                        לומד וזוכר את המאפיינים הייחודיים (ההתנגדות החשמלית של עור הפנים) באמצעות אינטליגנציה
+                        ובאמצעותה מדייק את
+                        הטיפול האישי משימוש לשימוש
+                    </p>
+                    <p class="text-lg leading-none mb-3.5">
+                        <span class="font-bold">•מזהה בזמן אמת </span>
+                        את אזור הפנים המטופל ומחליט בכל רגע אלו שתי אלקטרודות להפעיל, על מנת לשחרר את רמת
+                        האנרגיה האופטימלית לכל
+                        אזור טיפול
+
+                    </p>
+                    <p class="text-lg leading-none mb-3.5">
+                        <span class="font-bold">
+                            מאפשר עומקים
+                        </span>
+                        שונים של חדירת אנרגיה, הודות למבנה הא־סימטרי הייחודי של האלקטרודות •
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col gap-y-10">
+            <div class="flex flex-col justify-center items-center px-5 mt-10">
+                <p class="text-[22px] items-end font-medium mb-4">
+                    לייעוץ השאירי פרטים:
+                </p>
+                <form class="w-full flex flex-col items-center">
+                    <div class="flex flex-col gap-y-4 items-center">
+                        <input type="text"
+                            class="w-80 bg-white text-[#24272a] text-base leading-none pt-4 pb-3 pr-2 rounded-full"
+                            placeholder="שם מלא">
+                        <input type="text"
+                            class="w-80 bg-white text-[#24272a] text-base leading-none pt-4 pb-3 pr-2 rounded-full"
+                            placeholder="טלפון">
+                        <input type="text"
+                            class="w-80 bg-white text-[#24272a] text-base leading-none pt-4 pb-3 pr-2 rounded-full"
+                            placeholder="מייל">
+                    </div>
+                    <div class="flex mt-7 w-80">
+                        <div class="flex items-center gap-x-1.5">
+                            <input type="radio" id="radio" class="h-5 w-5">
+                            <label for="radio" class="text-sm text-[#24272a] font-medium leading-4">
+                                אני מאשר/ת קבלת מידע שיווקי, הטבות ומבצעים
+                            </label>
+                        </div>
+                        <button
+                            class="w-[211px] bg-white text-[#76777a] text-lg font-medium leading-6 pt-[13px] pb-[10px] pr-2 border border-cus-red rounded-full">
+                            חזרו אליי
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="h-60 flex">
+                <div class="p-3 w-1/2">
+                    <div class=" h-full bg-[#cfa094] pr-4 flex flex-col justify-center text-[#15121a]">
+                        <p class="text-2xl font-bold leading-none mb-4">
+                            מבצע השקה
+                        </p>
+                        <p class="text-2xl font-medium leading-none mb-4">
+                            הצטרפי למהפיכה הטכנולוגית!
+                        </p>
+                        <p class="text-lg leading-none">
+                            בתוקף עד 15.7.22 <br> או עד גמר המלאי
+                        </p>
+                    </div>
+                </div>
+                <img src="./assets/to-woman.png" alt="img-lady" class="w-1/2 h-full">
+            </div>
+        </div>
+        <div class="flex flex-col mt-12 bg-white-rbga relative">
+            <div class="flex flex-col justify-center items-center">
+                <p class="text-[28px] leading-none text-[#24272a] mb-4">הלקוחות שלנו מספרים עלינו</p>
+                <p class="text-xl text-[#24272a] leading-none mb-5">
+                    ד״ר שרון טוראל, מומחית למחול מספרת
+                    <br>
+                    על הניסיון שלה עם אייגן
+                </p>
+                <div class="relative">
+                    <img src="./assets/Movie.png" alt="movie" class="w-full">
+                    <button type="button" class="absolute top-[40%] left-[50%] z-10">
+                        <img src="./assets/PLay.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <p class="text-[28px] leading-none text-[#24272a] mb-4">הלקוחות שלנו מספרים עלינו</p>
+                <p class="text-xl text-[#24272a] leading-none mb-5">
+                    ד״ר שרון טוראל, מומחית למחול מספרת
+                    <br>
+                    על הניסיון שלה עם אייגן
+                </p>
+                <div class="relative">
+                    <img src="./assets/Movie.png" alt="movie" class="w-full">
+                    <button type="button" class="absolute top-[40%] left-[50%] z-10">
+                        <img src="./assets/PLay.png" alt="img">
+                    </button>
+                </div>
+            </div>
+            <img src="./assets/Device.png" alt="Device"
+                class="absolute bottom-[0%] left-[0%] md:bottom-[5%] md:left-[5%] -z-10 w-20 md:w-40">
+        </div>
+        <div class="bg-mb-woman-bottom h-[660px] bg-contain md:bg-cover bg-no-repeat relative">
+            <div class="absolute bottom-0 w-full bg-gradient-to-tr from-[#e8e2efaf] to-white pt-10">
+                <div class="flex flex-col justify-center items-center">
+                    <p class="text-[22px] items-end font-medium mb-4">
+                        לייעוץ השאירי פרטים:
+                    </p>
+                    <form class="w-full flex flex-col items-center bg-white">
+                        <div class="flex flex-col gap-y-4 items-center mt-3">
+                            <input type="text"
+                                class="w-80 bg-white text-[#24272a] text-base leading-none pt-4 pb-3 pr-2 rounded-full"
+                                placeholder="שם מלא">
+                            <input type="text"
+                                class="w-80 bg-white text-[#24272a] text-base leading-none pt-4 pb-3 pr-2 rounded-full"
+                                placeholder="טלפון">
+                            <input type="text"
+                                class="w-80 bg-white text-[#24272a] text-base leading-none pt-4 pb-3 pr-2 rounded-full"
+                                placeholder="מייל">
+                        </div>
+                        <div class="flex mt-7 w-80 pb-10">
+                            <div class="flex items-center gap-x-1.5">
+                                <input type="radio" id="radio" class="h-5 w-5">
+                                <label for="radio" class="text-sm text-[#24272a] font-medium leading-4">
+                                    אני מאשר/ת קבלת מידע שיווקי, הטבות ומבצעים
+                                </label>
+                            </div>
+                            <button
+                                class="w-[211px] bg-white text-[#76777a] text-lg font-medium leading-6 pt-[13px] pb-[10px] pr-2 border border-cus-red rounded-full">
+                                חזרו אליי
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="div px-6">
+            <div class="flex justify-between border-t-2 border-cus-gray pt-5">
+                <div>
+                    <p class="text-cus-gray text-sm leading-8">
+                        ® כל הזכויות שמורות לAiGAiN בע״מ
+                    </p>
+                    <p class="text-cus-gray text-sm leading-8">
+                        מאושר ע״י משרד הבריאות
+                    </p>
+                </div>
+                <div class="flex gap-5">
+                    <img src="./assets/Israel.png" alt="Israel" class="w-14 h-12">
+                </div>
+            </div>
+            <div class="mt-10">
+                <p class="font-bold text-cus-gray text-sm leading-8">
+                    עלינו:
+                </p>
+                <p class="text-cus-gray text-sm leading-8">
+                    אודות אייגיין
+                </p>
+                <p class="text-cus-gray text-sm leading-8">
+                    תקנון ותנאים משפטיים
+                </p>
+                <p class="text-cus-gray text-sm leading-8">
+                    Info@aigain.co.il
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="bg-cus-slide hidden lg:block">
+        <div class="bg-slider bg-cover pb-10">
+            <!-- Slider main container -->
+            <div class="swiper h-[600px] w-full">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+
+                    <div class="swiper-slide">
+                        <div class="container mx-auto text-center py-24 flex gap-x-16">
+                            <div class="flex flex-col justify-center w-1/2">
+                                <p class="text-[28px] leading-none text-[#24272a] mb-4">הלקוחות שלנו מספרים עלינו</p>
+                                <p class="text-xl text-[#24272a] leading-none mb-9">
+                                    ד״ר שרון טוראל, מומחית למחול מספרת
+                                    <br>
+                                    על הניסיון שלה עם אייגן
+                                </p>
+                                <div class="relative">
+                                    <img src="./assets/Movie.png" alt="movie" class="w-full"
+                                        data-modal-toggle="defaultModal">
+                                    <button type="button" class="absolute top-[40%] left-[50%] z-10"
+                                        data-modal-toggle="defaultModal">
+                                        <img src="./assets/PLay.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-center w-1/2">
+                                <p class="text-[28px] leading-none text-[#24272a] mb-4">הלקוחות שלנו מספרים עלינו</p>
+                                <p class="text-xl text-[#24272a] leading-none mb-9">
+                                    ד״ר שרון טוראל, מומחית למחול מספרת
+                                    <br>
+                                    על הניסיון שלה עם אייגן
+                                </p>
+                                <div class="relative">
+                                    <img src="./assets/Movie.png" alt="movie" class="w-full"
+                                        data-modal-toggle="defaultModal">
+                                    <button type="button" class="absolute top-[40%] left-[50%] z-10"
+                                        data-modal-toggle="defaultModal">
+                                        <img src="./assets/PLay.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev text-black"></div>
+                <div class="swiper-button-next text-black"></div>
+
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+            <div class="container mx-auto flex mt-20">
+                <div class="w-1/2">
+                    <img src="./assets/face.png" alt="woman-face">
+                </div>
+                <div class="w-1/2">
+                    <p class="text-2xl text-cus-red">איזורי הטיפול:</p>
+                    <p class="text-[22px] text-cus-gray leading-none">
+                        בזכות טכנולוגיית ה־Ai הבלעדית, AiGAiN לומד את מאפייני
+                    </p>
+                    <p class="text-[22px] text-cus-gray leading-none">
+                        העור הספציפיים שלך ומשנה בהתאם להם את עומק חדירת
+                    </p>
+                    <p class="text-[22px] text-cus-gray leading-none">
+                        העור הספציפיים שלך ומשנה בהתאם להם את עומק חדירת
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="defaultModal" tabindex="-1" aria-hidden="true"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full">
+            <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
+                <!-- Modal content -->
+                <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                    <!-- Modal header -->
+                    <div dir="ltr" class="flex justify-between items-start p-4 rounded-t border-b dark:border-gray-600">
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                            About Video
+                        </h3>
+                        <button type="button"
+                            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                            data-modal-toggle="defaultModal">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="p-6 space-y-6">
+                        <video controls>
+                            <source src="./assets/video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hidden lg:block bg-white py-[50px]">
+        <div class="container mx-auto flex w-full justify-end">
+            <div class="w-1/2 text-right">
+                <p class="text-cus-red text-2xl leading-none">
+                    שליטה על עוצמת האנרגיה ואיזורי ה
+                </p>
+                <p class="text-[22px]" dir="">
+                    • שליטה על תחושת החום במהלך הטיפול
+                </p>
+                <p class="text-[22px]">
+                    • 4 עוצמות אנרגיה לבחירה
+                </p>
+                <p class="text-[22px]">
+                    • 6 אזורי טיפול לנוחות מרבית
+                </p>
+                <p class="text-[22px]">
+                    • 3 דקות עבודה לכל אזור טיפול
+                </p>
+
+            </div>
+            <div class="w-1/2 flex items-center">
+                <p class="ml-5 text-[22px] leading-6 text-cus-red">
+                    אופן פעולה ייחודי
+                    <br>
+                    לנוחות מקסימלית:
+                </p>
+                <img src="./assets/instruct-3.png" alt="instruction 3" class="max-w-[335px]">
+            </div>
+
+        </div>
+    </div>
+    <div class="hidden lg:block bg-woman-bottom h-screen bg-no-repeat bg-cover relative">
+        <div class="bg-white-rbga absolute w-full bottom-0 py-[25px]">
+            <div class="container mx-auto flex gap-x-16">
+                <div class="h-[309px] w-1/2 flex">
+                    <div class="w-[45%] h-full bg-[#cfa094] pr-16 flex flex-col justify-center text-[#15121a]">
+                        <p class="text-[32px] font-bold leading-none mb-4">
+                            מבצע השקה
+                        </p>
+                        <p class="text-[29px] font-medium leading-none mb-4">
+                            הצטרפי למהפיכה הטכנולוגית!
+                        </p>
+                        <p class="text-lg leading-none">
+                            בתוקף עד 15.7.22 <br> או עד גמר המלאי
+                        </p>
+                    </div>
+                    <img src="./assets/smadar+nadrea.png" alt="img-lady" class="w-[55%]">
+                </div>
+                <div class="flex flex-col justify-center w-1/1">
+                    <p class="text-[22px] items-end font-medium mb-4">
+                        לייעוץ השאירי פרטים:
+                    </p>
+                    <form class="w-full">
+                        <div class="flex gap-x-4">
+                            <input type="text"
+                                class="w-[211px] bg-white text-[#24272a] text-base leading-none pt-5 pb-4 pr-2 rounded-full"
+                                placeholder="שם מלא">
+                            <input type="text"
+                                class="w-[211px] bg-white text-[#24272a] text-base leading-none pt-5 pb-4 pr-2 rounded-full"
+                                placeholder="טלפון">
+                            <input type="text"
+                                class="w-[211px] bg-white text-[#24272a] text-base leading-none pt-5 pb-4 pr-2 rounded-full"
+                                placeholder="מייל">
+                        </div>
+                        <div class="flex justify-between mt-7">
+                            <div class="flex items-center gap-x-1.5">
+                                <input type="radio" id="radio" class="h-5 w-5">
+                                <label for="radio" class="text-sm text-[#24272a] font-medium leading-4">
+                                    אני מאשר/ת קבלת מידע שיווקי, הטבות ומבצעים
+                                </label>
+                            </div>
+                            <button
+                                class="w-[211px] bg-white text-[#76777a] text-lg font-medium leading-6 pt-[17px] pb-[14px] pr-2 border border-cus-red rounded-full">
+                                חזרו אליי
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hidden lg:block bg-white pt-10 pb-12">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex gap-5">
+                <div class="">
+                    <p class="text-cus-gray text-sm leading-8">
+                        ® כל הזכויות שמורות לAiGAiN בע״מ
+                    </p>
+                    <p class="text-cus-gray text-sm leading-8">
+                        מאושר ע״י משרד הבריאות
+                    </p>
+                    <div class="flex gap-5">
+                        <img src="./assets/Israel.png" alt="Israel" class="w-14 h-12">
+                        <img src="./assets/CE.png" alt="CE" class="w-12 h-12">
+                    </div>
+                </div>
+                <div>
+                    <p class="font-bold text-cus-gray text-sm leading-8">
+                        עלינו:
+                    </p>
+                    <p class="text-cus-gray text-sm leading-8">
+                        אודות אייגיין
+                    </p>
+                    <p class="text-cus-gray text-sm leading-8">
+                        תקנון ותנאים משפטיים
+                    </p>
+                    <p class="text-cus-gray text-sm leading-8">
+                        Info@aigain.co.il
+                    </p>
+                </div>
+            </div>
+            <img src="./assets/logo-aigain.png" alt="bottom-logo" class="bottom-logo w-[133px] h-[51px]">
+        </div>
+    </div>
+    <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
+</body>
+
+
+</html>
