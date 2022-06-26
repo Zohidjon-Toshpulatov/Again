@@ -1075,7 +1075,7 @@ video {
 }
 
 .bg-mb-woman-bottom {
-  background-image: url('.././src/assets/bg-woman.png');
+  background-image: url('./src/assets/bg-woman.png');
 }
 
 .bg-gradient-to-tr {
@@ -1087,7 +1087,7 @@ video {
 }
 
 .bg-woman-bottom {
-  background-image: url('.././src/assets/Women-bottom.png');
+  background-image: url('./src/assets/Women-bottom.png');
 }
 
 .from-\[\#e8e2efaf\] {

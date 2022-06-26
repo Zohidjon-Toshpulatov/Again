@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'woman-bottom': "url('.././src/assets/Women-bottom.png')",
-        'mb-woman-bottom': "url('.././src/assets/bg-woman.png')",
+        'woman-bottom': "url('./src/assets/Women-bottom.png')",
+        'mb-woman-bottom': "url('./src/assets/bg-woman.png')",
         'slider': "url('.././src/assets/device+ai.png')"
       },
       backgroundColor: {
