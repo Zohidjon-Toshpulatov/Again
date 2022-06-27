@@ -17,8 +17,8 @@
             direction: 'horizontal',
             loop: true,
             infinite: true,
-            autoplay: true,
-            autoplaySpeed: 2000,
+            // autoplay: true,
+            // autoplaySpeed: 2000,
 
             // If we need pagination
             pagination: {
@@ -36,6 +36,23 @@
                 el: '.swiper-scrollbar',
             },
         });
+
+        const swiper2 = new Swiper('.swiper2',
+            {
+                // Optional parameters
+                direction: 'horizontal',
+                loop: true,
+                infinite: true,
+                slidesPerView: 1,
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next2',
+                    prevEl: '.swiper-button-prev2',
+                },
+            }
+        );
+
 
     </script>
 </head>
@@ -316,13 +333,12 @@
     </div>
 
     <div class="bg-cus-slide">
-        <div class=" lg:bg-slider bg-auto lg:bg-cover bg-no-repeat pb-10">
+        <div class="lg:bg-slider bg-auto lg:bg-cover bg-no-repeat pb-10">
             <!-- Slider main container -->
             <div class="swiper lg:h-[600px] w-full">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
-
                     <div class="swiper-slide">
                         <div
                             class="container mx-auto text-center lg:py-24 flex flex-col lg:flex-row gap-y-10 lg:gap-y-0 gap-x-16 px-5">
@@ -344,7 +360,7 @@
                             </div>
                             <div class="flex flex-col justify-center lg:w-1/2">
                                 <p class="text-[28px] leading-none text-[#24272a] mb-4">הלקוחות שלנו מספרים עלינו</p>
-                                <p class="text-xl text-[#24272a] leading-none lg:mb-9">
+                                <p class="text-xl text-[#24272a] leading-none mb-9">
                                     ד״ר שרון טוראל, מומחית למחול מספרת
                                     <br>
                                     על הניסיון שלה עם אייגן
@@ -359,23 +375,24 @@
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
                 <!-- If we need pagination -->
                 <!-- <div class="swiper-pagination"></div> -->
 
                 <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev after:text-black hidden lg:block"></div>
-                <div class="swiper-button-next after:text-black hidden lg:block"></div>
+                <div class="swiper-button-prev after:text-black hidden lg:block lg:top-[65%]"></div>
+                <div class="swiper-button-next after:text-black hidden lg:block lg:top-[65%]"></div>
 
                 <!-- If we need scrollbar -->
                 <!-- <div class="swiper-scrollbar"></div> -->
             </div>
-            <div class="container mx-auto hidden lg:flex mt-20">
+            <div class="container mx-auto hidden lg:flex justify-center mt-20">
                 <div class="w-1/2">
-                    <img src="./assets/face.png" alt="woman-face">
+                    <img src="./assets/face.png" alt="woman-face" class="block mx-auto">
                 </div>
-                <div class="w-1/2">
+                <div class="w-1/2 flex flex-col items-center text-end">
                     <p class="text-2xl text-cus-red">איזורי הטיפול:</p>
                     <p class="text-[22px] text-cus-gray leading-none">
                         בזכות טכנולוגיית ה־Ai הבלעדית, AiGAiN לומד את מאפייני
