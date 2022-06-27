@@ -25,3 +25,11 @@
       @apply  bg-white text-[#24272a] text-base leading-none pt-5 pb-4 pr-2 border border-cus-gray rounded-full
     }
 }
+
+.swiper2  .swiper-slide-active > div {
+    justify-content: end;
+}
+
+.swiper2 .swiper-slide-active +.swiper-slide > div {
+    justify-content: start;
+}

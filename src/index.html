@@ -16,7 +16,8 @@
             // Optional parameters
             direction: 'horizontal',
             loop: true,
-            infinite: true,
+            infinite: false,
+            slidesPerView: 1,
             // autoplay: true,
             // autoplaySpeed: 2000,
 
@@ -41,9 +42,9 @@
             {
                 // Optional parameters
                 direction: 'horizontal',
-                loop: true,
-                infinite: true,
-                slidesPerView: 1,
+                loop: false,
+                infinite: false,
+                slidesPerView: 2,
 
                 // Navigation arrows
                 navigation: {
@@ -102,20 +103,29 @@
 
                 </div>
                 <div class="hidden lg:flex xl:w-[736px] gap-3">
-                    <img src="./assets/hero-massager.svg" alt="hero placeholder" class="lg:w-28 xl:w-1/4 max-h-40"
-                        data-modal-toggle="lightbox">
-                    <img src="./assets/massager.png" alt="hero placeholder" class="lg:w-28 xl:w-1/4 max-h-40"
-                        data-modal-toggle="lightbox">
-                    <img src="./assets/bg-woman.png" alt="hero placeholder" class="lg:w-28 xl:w-1/4 max-h-40"
-                        data-modal-toggle="lightbox">
-                    <img src="./assets/hero-place.png" alt="hero placeholder" class="lg:w-28 xl:w-1/4 max-h-40"
-                        data-modal-toggle="lightbox">
+                    <div class="lg:w-28 xl:w-1/4 max-h-40 overflow-hidden">
+                        <img class="w-full" src="./assets/hero-massager.svg" alt="hero placeholder"
+                            data-modal-toggle="lightbox">
+                    </div>
+                    <div class="lg:w-28 xl:w-1/4 max-h-40 overflow-hidden">
+                        <img class="w-full" src="./assets/massager.png" alt="hero placeholder"
+                            data-modal-toggle="lightbox">
+                    </div>
+
+                    <div class="lg:w-28 xl:w-1/4 max-h-40 overflow-hidden">
+                        <img src="./assets/bg-woman.png" alt="hero placeholder" class="w-full"
+                            data-modal-toggle="lightbox">
+                    </div>
+                    <div class="lg:w-28 xl:w-1/4 max-h-40 overflow-hidden">
+                        <img src="./assets/hero-place.png" alt="hero placeholder" class="w-full"
+                            data-modal-toggle="lightbox">
+                    </div>
                 </div>
                 <div id="lightbox" tabindex="-1" aria-hidden="true"
                     class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full">
                     <div class="relative p-4 w-full max-w-4xl h-full md:h-auto">
                         <!-- Modal content -->
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                        <div class="relative bg-white rounded-none shadow dark:bg-gray-700">
                             <!-- Modal header -->
                             <div class="flex justify-end items-start p-4 rounded-t">
                                 <button type="button"
@@ -130,7 +140,7 @@
                                 </button>
                             </div>
                             <!-- Modal body -->
-                            <div class="p-6">
+                            <div class="p-6 rounded-none">
                                 <div class="swiper w-screen lg:max-w-[736px]">
                                     <!-- Additional required wrapper -->
                                     <div class="swiper-wrapper">
@@ -153,20 +163,24 @@
                                         </div>
                                     </div>
 
-                                    <!-- If we need navigation buttons -->
-                                    <div class="swiper-button-prev after:text-black"></div>
-                                    <div class="swiper-button-next after:text-black"></div>
-
                                 </div>
                                 <div class="hidden lg:flex xl:w-[736px] gap-3 justify-center">
-                                    <img src="./assets/hero-massager.svg" alt="hero placeholder"
-                                        class="lg:w-28 xl:w-1/4 max-h-40" onclick="changeSrc(this)">
-                                    <img src="./assets/massager.png" alt="hero placeholder"
-                                        class="lg:w-28 xl:w-1/4 max-h-40" onclick="changeSrc(this)">
-                                    <img src="./assets/bg-woman.png" alt="hero placeholder"
-                                        class="lg:w-28 xl:w-1/4 max-h-40" onclick="changeSrc(this)">
-                                    <img src="./assets/hero-place.png" alt="hero placeholder"
-                                        class="lg:w-28 xl:w-1/4 max-h-40" onclick="changeSrc(this)">
+                                    <div class="lg:w-28 xl:w-1/4 max-h-40 overflow-hidden">
+                                        <img src="./assets/hero-massager.svg" alt="hero placeholder" class="w-full"
+                                            onclick="changeSrc(this)">
+                                    </div>
+                                    <div class="lg:w-28 xl:w-1/4 max-h-40 overflow-hidden">
+                                        <img src="./assets/massager.png" alt="hero placeholder" class="w-full"
+                                            onclick="changeSrc(this)">
+                                    </div>
+                                    <div class="lg:w-28 xl:w-1/4 max-h-40 overflow-hidden">
+                                        <img src="./assets/bg-woman.png" alt="hero placeholder" class="w-full"
+                                            onclick="changeSrc(this)">
+                                    </div>
+                                    <div class="lg:w-28 xl:w-1/4 max-h-40 overflow-hidden">
+                                        <img src="./assets/hero-place.png" class="w-full" alt="hero placeholder"
+                                            onclick="changeSrc(this)">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -393,17 +407,17 @@
         </div>
     </div>
 
-    <div class="bg-cus-slide">
-        <div class="lg:bg-slider bg-auto lg:bg-cover bg-no-repeat pb-10">
+    <div class="bg-cus-slide max-w-[100%] overflow-hidden">
+        <div class="lg:bg-slider bg-auto lg:bg-cover bg-no-repeat pb-10 relative">
             <!-- Slider main container -->
-            <div class="swiper lg:h-[600px] w-full hidden lg:block md:slider">
+            <div class="swiper2 lg:h-[600px] w-full hidden lg:block md:slider">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide">
                         <div
-                            class="container mx-auto text-center lg:py-24 flex flex-col lg:flex-row gap-y-10 lg:gap-y-0 gap-x-16 px-5">
-                            <div class="flex flex-col justify-center lg:w-1/2">
+                            class="justify-center mx-auto text-center lg:py-24 flex flex-col lg:flex-row gap-y-10 lg:gap-y-0 gap-x-4">
+                            <div class="flex flex-col justify-center">
                                 <p class="text-[28px] leading-none text-[#24272a] mb-4">הלקוחות שלנו מספרים עלינו</p>
                                 <p class="text-xl text-[#24272a] leading-none mb-9">
                                     ד״ר שרון טוראל, מומחית למחול מספרת
@@ -413,38 +427,67 @@
                                 <div class="relative">
                                     <img src="./assets/Movie.png" alt="movie" class="w-full"
                                         data-modal-toggle="defaultModal">
-                                    <button type="button" class="absolute top-[40%] left-[50%] z-10"
-                                        data-modal-toggle="defaultModal">
-                                        <img src="./assets/PLay.png" alt="">
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="flex flex-col justify-center lg:w-1/2">
-                                <p class="text-[28px] leading-none text-[#24272a] mb-4">הלקוחות שלנו מספרים עלינו</p>
-                                <p class="text-xl text-[#24272a] leading-none mb-9">
-                                    ד״ר שרון טוראל, מומחית למחול מספרת
-                                    <br>
-                                    על הניסיון שלה עם אייגן
-                                </p>
-                                <div class="relative">
-                                    <img src="./assets/Movie.png" alt="movie" class="w-full"
-                                        data-modal-toggle="defaultModal">
-                                    <button type="button" class="absolute top-[40%] left-[50%] z-10"
+                                    <button type="button" class="absolute top-[40%] left-[50%] z-20"
                                         data-modal-toggle="defaultModal">
                                         <img src="./assets/PLay.png" alt="">
                                     </button>
                                 </div>
                             </div>
                         </div>
-
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="justify-center mx-auto text-center lg:py-24 flex flex-col lg:flex-row gap-y-10 lg:gap-y-0 gap-x-4">
+                            <div class="flex flex-col justify-center">
+                                <p class="text-[28px] leading-none text-[#24272a] mb-4">הלקוחות שלנו מספרים עלינו</p>
+                                <p class="text-xl text-[#24272a] leading-none mb-9">
+                                    ד״ר שרון טוראל, מומחית למחול מספרת
+                                    <br>
+                                    על הניסיון שלה עם אייגן
+                                </p>
+                                <div class="relative">
+                                    <img src="./assets/Movie.png" alt="movie" class="w-full"
+                                        data-modal-toggle="defaultModal">
+                                    <button type="button" class="absolute top-[40%] left-[50%] z-20"
+                                        data-modal-toggle="defaultModal">
+                                        <img src="./assets/PLay.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="justify-center mx-auto text-center lg:py-24 flex flex-col lg:flex-row gap-y-10 lg:gap-y-0 gap-x-4 px-5">
+                            <div class="flex flex-col justify-center">
+                                <p class="text-[28px] leading-none text-[#24272a] mb-4">הלקוחות שלנו מספרים עלינו</p>
+                                <p class="text-xl text-[#24272a] leading-none mb-9">
+                                    ד״ר שרון טוראל, מומחית למחול מספרת
+                                    <br>
+                                    על הניסיון שלה עם אייגן
+                                </p>
+                                <div class="relative">
+                                    <img src="./assets/Movie.png" alt="movie" class="w-full"
+                                        data-modal-toggle="defaultModal">
+                                    <button type="button" class="absolute top-[40%] left-[50%] z-20"
+                                        data-modal-toggle="defaultModal">
+                                        <img src="./assets/PLay.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- If we need pagination -->
                 <!-- <div class="swiper-pagination"></div> -->
 
                 <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev after:text-black hidden lg:block lg:top-[65%]"></div>
-                <div class="swiper-button-next after:text-black hidden lg:block lg:top-[65%]"></div>
+                <div
+                    class="z-20 swiper-button-prev after:text-black hidden lg:block lg:top-[50%] lg:right-[30px!important]">
+                </div>
+                <div
+                    class="z-20 swiper-button-next after:text-black hidden lg:block lg:top-[50%] lg:left-[30px!important]">
+                </div>
 
                 <!-- If we need scrollbar -->
                 <!-- <div class="swiper-scrollbar"></div> -->
@@ -460,7 +503,7 @@
                     </p>
                     <div class="relative">
                         <img src="./assets/Movie.png" alt="movie" class="w-full" data-modal-toggle="defaultModal">
-                        <button type="button" class="absolute top-[40%] left-[50%] z-10"
+                        <button type="button" class="absolute top-[40%] left-[50%] z-20"
                             data-modal-toggle="defaultModal">
                             <img src="./assets/PLay.png" alt="">
                         </button>
@@ -475,7 +518,7 @@
                     </p>
                     <div class="relative">
                         <img src="./assets/Movie.png" alt="movie" class="w-full" data-modal-toggle="defaultModal">
-                        <button type="button" class="absolute top-[40%] left-[50%] z-10"
+                        <button type="button" class="absolute top-[40%] left-[50%] z-20"
                             data-modal-toggle="defaultModal">
                             <img src="./assets/PLay.png" alt="">
                         </button>
@@ -500,29 +543,24 @@
                 </div>
             </div>
         </div>
+        <!-- VIDEO PLAYER MODAL -->
         <div id="defaultModal" tabindex="-1" aria-hidden="true"
             class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full">
             <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
                 <!-- Modal content -->
                 <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
                     <!-- Modal header -->
-                    <div dir="ltr" class="flex justify-between items-start p-4 rounded-t border-b dark:border-gray-600">
-                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                            About Video
-                        </h3>
-                        <button type="button"
-                            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
-                            data-modal-toggle="defaultModal">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                    </div>
                     <!-- Modal body -->
-                    <div class="p-6 space-y-6">
+                    <button type="button"
+                        class="absolute bg-neutral-100 z-10 right-0 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                        data-modal-toggle="defaultModal">
+                        <svg class="w-5 h-5" fill="black" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <div class="px-0">
                         <video controls>
                             <source src="./assets/video.mp4" type="video/mp4">
                             Your browser does not support the video tag.
@@ -564,16 +602,14 @@
 
         </div>
     </div>
-    <div
-        class="h-[800px] lg:h-[900px] xl:h-screen bg-no-repeat bg-origin-border lg:bg-cover bg-cover bg-center relative">
-        <div class="absolute w-full h-full object-fill  lg:object-cover">
-            <img src="./assets/Women-bottom.png" alt="woman-big" class="hidden lg:block w-full h-full m-0">
-            <img src="./assets/bg-woman.png" alt="woman" class="block lg:hidden w-full h-full m-0">
-
+    <div class="h-[68rem] bg-no-repeat bg-origin-border lg:bg-cover bg-cover bg-center relative">
+        <div class="absolute w-full h-full object-fill lg:object-cover overflow-hidden">
+            <img src="./assets/Women-bottom.png" alt="woman-big" class="hidden lg:block w-full m-0">
+            <img src="./assets/bg-woman.png" alt="woman" class="block lg:hidden w-full m-0">
         </div>
         <div class="bg-white-rbga absolute w-full bottom-0 pt-20 lg:py-6">
             <div class="lg:container w-full mx-auto flex justify-center gap-x-16">
-                <div class="xl:h-[309px] w-1/2 hidden lg:flex flex-col xl:flex-row">
+                <div class="xl:max-h-[309px] w-1/2 hidden lg:flex flex-col xl:flex-row">
                     <div
                         class="xl:w-[45%] h-full bg-[#cfa094] py-10 xl:py-0 px-5 xl:pr-16 flex flex-col justify-center text-[#15121a]">
                         <p class="text-[32px] font-bold leading-none mb-4">
@@ -586,10 +622,12 @@
                             בתוקף עד 15.7.22 <br> או עד גמר המלאי
                         </p>
                     </div>
-                    <img src="./assets/smadar+nadrea.png" alt="img-lady" class="xl:w-[55%] h-auto">
+                    <div class="xl:w-[55%] overflow-hidden justify-center relative">
+                        <img src="./assets/smadar+nadrea.png" alt="img-lady" class="h-full w-auto absolute">
+                    </div>
                 </div>
                 <div
-                    class="flex flex-col justify-center w-full lg:w-1/2 bg-white lg:bg-transparent py-5  px-10 lg:px-0">
+                    class="flex flex-col justify-center w-full lg:w-1/2 bg-white lg:bg-transparent py-7  px-10 lg:px-0">
                     <p class="text-22 font-medium mb-4">
                         לייעוץ השאירי פרטים:
                     </p>
