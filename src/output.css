@@ -1694,4 +1694,40 @@ video {
   .\32xl\:w-80 {
     width: 20rem;
   }
+
+  .\32xl\:w-72 {
+    width: 18rem;
+  }
+
+  .\32xl\:w-60 {
+    width: 15rem;
+  }
+
+  .\32xl\:w-64 {
+    width: 16rem;
+  }
+
+  .\32xl\:w-\[230px\] {
+    width: 230px;
+  }
+
+  .\32xl\:w-\[250px\] {
+    width: 250px;
+  }
+
+  .\32xl\:w-\[240\] {
+    width: 240;
+  }
+
+  .\32xl\:w-\[240px\] {
+    width: 240px;
+  }
+
+  .\32xl\:w-\[225px\] {
+    width: 225px;
+  }
+
+  .\32xl\:w-\[235px\] {
+    width: 235px;
+  }
 }
