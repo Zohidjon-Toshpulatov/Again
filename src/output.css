@@ -1477,6 +1477,10 @@ video {
     left: 0px;
   }
 
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:h-80 {
     height: 20rem;
   }
