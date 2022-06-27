@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'woman-bottom': "url('./src/assets/Women-bottom.png')",
-        'mb-woman-bottom': "url('./src/assets/bg-woman.png')",
-        'slider': "url('.././src/assets/device+ai.png')"
+        'woman-bottom': "url('./assets/Women-bottom.png')",
+        'mb-woman-bottom': "url('./assets/bg-woman.png')",
+        'slider': "url('./assets/device+ai.png')"
       },
       backgroundColor: {
         'white-rbga': 'rgba(232,226,239, 0.7)',
@@ -17,6 +17,7 @@ module.exports = {
         'cus-gray': '#43495b'
       },
       fontSize: {
+        22: '22px',
         45: '2.8125rem'
       }
     },
