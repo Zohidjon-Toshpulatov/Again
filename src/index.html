@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aigain</title>
-    <!-- <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./output.css">
 
@@ -58,7 +62,7 @@
     </script>
 </head>
 
-<body dir="rtl">
+<body dir="rtl" style="font-family: 'Montserrat', sans-serif">
     <div class="lg:hidden px-10">
         <h1 class="text-cus-gray text-4xl font-medium leading-none tracking-tight mb-1">Aigain</h1>
         <h2 class="text-cus-gray text-3xl leading-none">Beautiful Aging</h2>
@@ -66,31 +70,27 @@
             <img src="./assets/stars.png" alt="stars" class="">
         </div>
     </div>
-    <div class="hero-desktop lg:container mx-auto lg:pb-48">
+    <div class="hero-desktop max-w-[1234px] mx-auto lg:pb-9">
 
-        <div class="hero flex flex-col lg:flex-row w-full gap-x-16 mb-10">
+        <div class="hero flex flex-col lg:flex-row w-full gap-x-[43px] mb-[30px]">
 
-            <div class="hero-slider lg:w-1/2 flex flex-col  items-center justify-center gap-y-5">
+            <div class="hero-slider lg:w-1/2 flex flex-col  items-center gap-y-3">
                 <!-- Slider main container -->
-                <div class="swiper w-screen lg:max-w-[736px]">
+                <div class="swiper w-screen lg:max-w-[600px]">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide">
-                            <img src="./assets/hero-massager.svg" alt="img"
-                                class="mx-auto lg:mx-0 xl:mx-auto  max-h-[495px] max-w-full">
+                            <img src="./assets/massager.png" alt="img" class="lg:mr-[63px] max-h-[490px]  max-w-full">
                         </div>
                         <div class="swiper-slide">
-                            <img src="./assets/massager.png" alt="img"
-                                class="mx-auto lg:mx-0 xl:mx-auto max-h-[495px] max-w-full">
+                            <img src="./assets/massager.png" alt="img" class="lg:mr-[63px] max-h-[490px]  max-w-full">
                         </div>
                         <div class="swiper-slide">
-                            <img src="./assets/bg-woman.png" alt="img"
-                                class="mx-auto lg:mx-0 xl:mx-auto max-h-[495px] max-w-full">
+                            <img src="./assets/bg-woman.png" alt="img" class="lg:mr-[63px] max-h-[490px]  max-w-full">
                         </div>
                         <div class="swiper-slide">
-                            <img src="./assets/hero-place.png" alt="img"
-                                class="mx-auto lg:mx-0 xl:mx-auto max-h-[495px] max-w-full">
+                            <img src="./assets/hero-place.png" alt="img" class="lg:mr-[63px] max-h-[490px]  max-w-full">
                         </div>
                     </div>
 
@@ -102,18 +102,18 @@
                     <div class="swiper-button-next after:text-black lg:hidden"></div>
 
                 </div>
-                <div class="hidden lg:flex xl:w-[736px] gap-3">
+                <div class="hidden lg:flex xl:w-[600px] gap-2">
                     <div class="lg:w-28 xl:w-1/4 max-h-40 overflow-hidden">
-                        <img class="w-full" src="./assets/hero-massager.svg" alt="hero placeholder"
+                        <img class="w-full" src="./assets/hero-place.png" alt="hero placeholder"
                             data-modal-toggle="lightbox">
                     </div>
                     <div class="lg:w-28 xl:w-1/4 max-h-40 overflow-hidden">
-                        <img class="w-full" src="./assets/massager.png" alt="hero placeholder"
+                        <img class="w-full" src="./assets/hero-place.png" alt="hero placeholder"
                             data-modal-toggle="lightbox">
                     </div>
 
                     <div class="lg:w-28 xl:w-1/4 max-h-40 overflow-hidden">
-                        <img src="./assets/bg-woman.png" alt="hero placeholder" class="w-full"
+                        <img src="./assets/hero-place.png" alt="hero placeholder" class="w-full"
                             data-modal-toggle="lightbox">
                     </div>
                     <div class="lg:w-28 xl:w-1/4 max-h-40 overflow-hidden">
@@ -188,64 +188,61 @@
                 </div>
             </div>
 
-            <div class="lg:w-1/2 text-right px-10 lg:px-0">
-                <div class="hidden lg:block">
-                    <h1 class="text-cus-gray text-45 font-medium leading-none tracking-tight mb-1">Aigain</h1>
-                    <h2 class="text-cus-gray text-3xl leading-none">Beautiful Aging</h2>
-                    <div class="flex justify-start my-5">
-                        <img src="./assets/stars.png" alt="stars" class="">
+            <div class="lg:w-1/2 text-right px-10 lg:px-0 ">
+                <div class="pr-[3xp] mr-[7px]">
+                    <div class="hidden lg:block">
+                        <h1 class="text-cus-gray text-45 font-medium leading-none tracking-[-2px] mb-1">Aigain</h1>
+                        <h2 class="text-cus-gray text-3xl leading-none">Beautiful Aging</h2>
+                        <div class="flex justify-start mt-[17px] mb-5">
+                            <img src="./assets/stars.png" alt="stars" class="">
+                        </div>
                     </div>
+                    <h1 class="hidden lg:block text-cus-red text-[34px] font-medium leading-none mb-[18px]">2,880 ₪</h1>
+                    <div class="hidden lg:block checkbox mb-5">
+                        <input type="checkbox" name="checkbox" id="checkbox" checked>
+                        <label for="checkbox" class="text-22 leading-none">נמצא במלאי</label>
+                    </div>
+                    <p class="text-xl md:text-[25px] font-medium text-black mb-[6px]">
+                        הדגם החדש והמתקדם ביותר – יותר עוצמה בכל טיפול!
+                    </p>
+                    <p class="text-xl leading-[24px] font-medium tracking-normal mb-[15px]">
+                        בי-קיור לייזר פרו מתאים לשימוש מקצועי בבתי חולים וקליניקות ולשימוש ביתי.
+                        בי-קיור לייזר פרו מתאים לשימוש מ
+                    </p>
+                    <p class="hero-list-item">
+                        <span class="text-cus-red font-bold ml-[1px]">•</span>
+                        משלוח עד שני ימי עסקים
+                    </p>
+                    <p class="hero-list-item">
+                        <span class="text-cus-red font-bold ml-[1px]">•</span>
+                        60 ימי התנסות בכפוף לתקנון*
+                    </p>
+                    <p class="hero-list-item">
+                        <span class="text-cus-red font-bold ml-[1px]">•</span>
+                        24 חודשי אחריות
+                    </p>
+                    <p class="hero-list-item">
+                        <span class="text-cus-red font-bold ml-[1px]">•</span>
+                        סטנד בי-קיור מקורי (שווי של 240 ש”
+                    </p>
+                    <p class="hero-list-item">
+                        <span class="text-cus-red font-bold ml-[1px]">•</span>
+                        הדרכה אישית עם נציג מקצועי
+                    </p>
                 </div>
-                <h1 class="hidden lg:block text-cus-red text-45 font-medium">2,880 ₪</h1>
-                <div class="hidden lg:block checkbox">
-                    <input type="checkbox" name="checkbox" id="checkbox" checked>
-                    <label for="checkbox" class="text-22 leading-none">נמצא במלאי</label>
-                </div>
-                <p class="text-xl md:text-[25px] font-medium text-black mb-3">
-                    הדגם החדש והמתקדם ביותר – יותר עוצמה בכל טיפול!
-                </p>
-                <p class="hero-list-item font-medium">
-                    בי-קיור לייזר פרו מתאים לשימוש מקצועי בבתי חולים וקליניקות ולשימוש ביתי.
-                </p>
-                <p class="hero-list-item font-medium mb-6">
-                    בי-קיור לייזר פרו מתאים לשימוש מ
-                </p>
-                <p class="hero-list-item">
-                    <span class="text-cus-red">•</span>
-                    משלוח עד שני ימי עסקים
-                </p>
-                <p class="hero-list-item">
-                    <span class="text-cus-red">•</span>
-                    60 ימי התנסות בכפוף לתקנון*
-                </p>
-                <p class="hero-list-item">
-                    <span class="text-cus-red">•</span>
-                    24 חודשי אחריות
-                </p>
-                <p class="hero-list-item">
-                    <span class="text-cus-red">•</span>
-                    סטנד בי-קיור מקורי (שווי של 240 ש”
-                </p>
-                <p class="hero-list-item">
-                    <span class="text-cus-red">•</span>
-                    הדרכה אישית עם נציג מקצועי
-                </p>
-                <div class="hidden lg:flex gap-x-5 justify-start my-6">
-                    <button class="bg-cus-red text-white w-[154px] btn border-cus-red">
+                <div class="hidden lg:flex gap-x-[15px] justify-start mt-[26px] mb-7">
+                    <button class="bg-cus-red text-white w-[155px] h-9 btn border-cus-red leading-none text-[25px]">
                         הזמן עכשיו
                     </button>
-                    <button class="w-[154px] btn border-black">
-                        + 1 -
+                    <button class="w-[154px] h-9 btn border-black">
+                        + <span class="ml-[15px] mr-[10px] leading-0 text-22px">1</span> -
                     </button>
                 </div>
-                <div class="flex items-center justify-center lg:justify-start gap-x-5 mt-5 lg:mt-0 mb-5">
+                <div class="flex items-center justify-center lg:justify-start gap-x-4 mt-5 lg:mt-0 mb-5">
                     <div class="flex flex-col justify-center">
                         <div
-                            class="rounded-full leading-none bg-[#e8e8e8] text-center flex flex-col justify-center w-14 h-14 ">
-                            <span class="text-2xl leading-none">60</span>
-                            <span class="text-base leading-none">
-                                יום נסיו
-                            </span>
+                            class="rounded-full text-[28px] leading-none bg-[#e8e8e8] w-14 h-14 flex items-center justify-center">
+                            <img src="./assets/box.png" alt="box" class="w-11 h-11">
                         </div>
                         <p class="text-sm leading-none text-center">בכפוף <br> התקנון</p>
                     </div>
@@ -259,8 +256,11 @@
                     </div>
                     <div class="flex flex-col justify-center">
                         <div
-                            class="rounded-full text-[28px] leading-none bg-[#e8e8e8] w-14 h-14 flex items-center justify-center">
-                            <img src="./assets/box.png" alt="box" class="w-11 h-11">
+                            class="rounded-full leading-none bg-[#e8e8e8] text-center flex flex-col justify-center w-14 h-14 ">
+                            <span class="text-2xl leading-none">60</span>
+                            <span class="text-base leading-none">
+                                יום נסיו
+                            </span>
                         </div>
                         <p class="text-sm leading-none text-center">בכפוף <br> התקנון</p>
                     </div>
@@ -282,55 +282,60 @@
                 </div>
             </div>
         </div>
-        <div class="flex flex-col lg:flex-row gap-x-16 px-10 lg:px-5 xl:px-0">
-            <div class="lg:w-1/2 text-right order-2 lg:order-1">
-                <h1 class="hero-text-heading">
-                    ה־AiGAiN פועל בשני מישורים:
+        <div class="flex flex-col lg:flex-row gap-x-[50px] px-10 lg:px-5 xl:px-0">
+            <div class="lg:w-[574px] text-justify order-2 lg:order-2 mt-1">
+                <h1 class="hero-text-heading text-lg leading-none tracking-normal ">
+                    ה־ <span class="text-lg leading-0">AiGAiN</span> פועל בשני מישורים:
                 </h1>
-                <p class="hero-text-para mb-3.5">
+                <p class="hero-text-para mb-[25px]">
                     <span class="font-bold"> בטווח המיידי -</span>
-                    הטיפול יכול להעניק לעור מראה חלק יותר כבר עם סיומו.
-                    הפחתת הקמטים ומיצוק עור הפנים עשויים להיות מורגשים כתוצאה מטיפול עקבי של מספר שבועות,
+                    הטיפול יכול להעניק לעור מראה חלק יותר כבר עם סיומו
                     <br>
                     <span class="font-bold">בטווח הארוך -</span>
+                    הפחתת הקמטים ומיצוק עור הפנים עשויים להיות מורגשים כתוצאה מטיפול עקבי של מספר שבועות,
                     בהתאם לתכנית הטיפול
                     המומלצת.
                 </p>
-                <p class="hero-text-para mb-3.5">
+                <p class="hero-text-para mb-6">
                     <span class="font-bold">
                         • מודד
                     </span>
                     את הטמפרטורה בתוך האלקטרודות בכל רגע נתון, לבטיחות מקסימלית ולטיפול אפקטיבי
                 </p>
-                <p class="hero-text-para mb-2.5">
-                    <span class="font-bold">• מלאכותית</span>
-                    לומד וזוכר את המאפיינים הייחודיים (ההתנגדות החשמלית של עור הפנים) באמצעות אינטליגנציה
-                    ובאמצעותה מדייק את
-                    הטיפול האישי משימוש לשימוש
+                <p class="hero-text-para tracking-normal">
+                    <span class="font-bold">• לומד וזוכר</span>
+                    את המאפיינים הייחודיים (ההתנגדות החשמלית של עור הפנים)
+                    באמצעות אינטליגנציה מלאכותית ובאמצעותה מדייק את הטיפול האישי
+                    משימוש לשימוש
                 </p>
-                <p class="hero-text-para mb-3.5">
-                    <span class="font-bold">•מזהה בזמן אמת </span>
+                <p class="hero-text-para mb-[22px]">
+                    <span class="font-bold">• מזהה בזמן אמת </span>
                     את אזור הפנים המטופל ומחליט בכל רגע אלו שתי אלקטרודות להפעיל, על מנת לשחרר את רמת
                     האנרגיה האופטימלית לכל
                     אזור טיפול
 
                 </p>
-                <p class="hero-text-para mb-3.5">
+                <p class="hero-text-para mb-[17px]">
                     <span class="font-bold">
-                        מאפשר עומקים
+                        • מאפשר עומקים
                     </span>
                     שונים של חדירת אנרגיה, הודות למבנה הא־סימטרי הייחודי של האלקטרודות •
                 </p>
             </div>
-            <div class="lg:w-1/2 text-right order-1 lg:order-2">
-                <h2 class="text-cus-red text-2xl">Aigain - טיפול מותאם אישית למיצוק עור הפנים ולהפחתת קמטים</h2>
-                <p class="mb-4 hero-text-para">
+            <div class="lg:w-[574px] order-1 lg:order-1 text-justify ">
+                <h2 class="text-cus-red text-22 tracking-[-1px] ">
+                    <span class="text-xl tracking-[-2px]">Aigain</span> -
+                    טיפול מותאם אישית
+                    למיצוק עור הפנים ולהפחתת
+                    קמטים
+                </h2>
+                <p class="mb-[25px] hero-text-para">
                     מכשיר רפואי־קוסמטי חכם לשימוש ביתי, שמסייע בהפחתת קמטים. בזכות טכנולוגיית הבינה המלאכותית, המכשיר
                     מתאים
                     את הטיפול באופן
                     אישי לעור פניך, להשגת תוצאות מרביות של מראה טבעי יפה ובריא יותר
                 </p>
-                <p class="mb-4 hero-text-para">
+                <p class="mb-[27px] hero-text-para">
                     הודות לטכנולוגיות ה־RF וה־Ai הייחודיות ל־AiGAiN, המכשיר לומד את מאפייני פניך ומדייק את הטיפול בקמטים
                     ובמיצוק העור מטיפול
                     לטיפול. באופן זה יעילות הטיפולים הולכת וגדלה משימוש לשימוש.  
@@ -385,8 +390,8 @@
                 </form>
             </div>
         </div>
-        <div class="hidden lg:flex justify-start gap-x-5 xl:gap-x-20 lg:mt-24 lg:px-5 xl:px-0">
-            <div class="max-w-72 text-right">
+        <div class="hidden lg:flex justify-start lg:mt-[59px] lg:px-5 xl:px-0">
+            <div class="max-w-[244px] text-right ml-5 pt-[15px]">
                 <p class="text-cus-red text-xl font-light leading-[24px]">
                     כיצד פועל המכשיר על העור?
                 </p>
@@ -394,11 +399,11 @@
                     הקולגן בגוף, שמעניק לעור הפנים נפח וגמישות ומקנה לו מראה טבעי ובריא יותר.
                 </p>
             </div>
-            <div class="flex flex-col justify-center items-center max-w-xl w-full">
-                <img src="./assets/instruction-1.png" alt="instruction-1" class="w-full">
+            <div class="flex flex-col items-center max-w-lg ml-[87px]">
+                <img src="./assets/instruction-1.png" alt="instruction-1" class="max-w-lg">
                 <img src="./assets/instruction-1.1.png" alt="instruction-1.1" class="w-3/5 mt-14">
             </div>
-            <div class="max-w-sm w-full text-center">
+            <div class="max-w-[300px] w-full text-center pt-[13px]">
                 <p class="text-cus-red text-2xl font-light leading-none mb-9">
                     עומק החדירה לעור
                 </p>
@@ -408,26 +413,29 @@
     </div>
 
     <div class="bg-cus-slide max-w-[100%] overflow-hidden">
-        <div class="lg:bg-slider bg-auto lg:bg-cover bg-no-repeat pb-10 relative">
+        <div class="lg:bg-slider bg-auto lg:bg-cover bg-no-repeat pb-[40px] relative max-w-[1500px] mx-auto">
             <!-- Slider main container -->
             <div class="swiper2 lg:h-[600px] w-full hidden lg:block md:slider">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide">
-                        <div
-                            class="justify-center mx-auto text-center lg:py-24 flex flex-col lg:flex-row gap-y-10 lg:gap-y-0 gap-x-4">
+                        <div class="mx-auto text-center lg:py-[75px] lg:pl-[75px] flex flex-col lg:flex-row">
                             <div class="flex flex-col justify-center">
-                                <p class="text-[28px] leading-none text-[#24272a] mb-4">הלקוחות שלנו מספרים עלינו</p>
-                                <p class="text-xl text-[#24272a] leading-none mb-9">
-                                    ד״ר שרון טוראל, מומחית למחול מספרת
-                                    <br>
-                                    על הניסיון שלה עם אייגן
+                                <p class="text-[28px] leading-none text-[#24272a] mb-[12px] pl-[5px] pt-[5px]">
+                                    איך אייגיין עובד?
                                 </p>
-                                <div class="relative">
-                                    <img src="./assets/Movie.png" alt="movie" class="w-full"
+                                <p class="text-xl text-[#24272a] leading-none mb-9">
+                                    צפו בסרטון ההדרכה המדגים
+                                    <br>
+                                    את כל האיכויות המדהימות של המכשיר
+                                </p>
+                                <div class="relative max-w-[620px] max-h-[349px] ">
+                                    <div class="absolute w-full h-full bg-white-rbga z-10 top-0"></div>
+
+                                    <img src="./assets/slide-video-bg.png" alt="movie" class="w-full h-full"
                                         data-modal-toggle="defaultModal">
-                                    <button type="button" class="absolute top-[40%] left-[50%] z-20"
+                                    <button type="button" class="absolute top-[39%] left-[44%] z-20"
                                         data-modal-toggle="defaultModal">
                                         <img src="./assets/PLay.png" alt="">
                                     </button>
@@ -436,40 +444,22 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div
-                            class="justify-center mx-auto text-center lg:py-24 flex flex-col lg:flex-row gap-y-10 lg:gap-y-0 gap-x-4">
+                        <div class="mx-auto text-center lg:py-[75px] pr-10 flex flex-col lg:flex-row">
                             <div class="flex flex-col justify-center">
-                                <p class="text-[28px] leading-none text-[#24272a] mb-4">הלקוחות שלנו מספרים עלינו</p>
+                                <p class="text-[28px] leading-none text-[#24272a] mb-[12px] pr-[15px] pt-[5px]">
+                                    הלקוחות שלנו מספרים עלינו
+                                </p>
                                 <p class="text-xl text-[#24272a] leading-none mb-9">
                                     ד״ר שרון טוראל, מומחית למחול מספרת
                                     <br>
                                     על הניסיון שלה עם אייגן
                                 </p>
-                                <div class="relative">
-                                    <img src="./assets/Movie.png" alt="movie" class="w-full"
+                                <div class="relative max-w-[620px] max-h-[349px] ">
+                                    <div class="absolute w-full h-full bg-white-rbga z-10 top-0"></div>
+
+                                    <img src="./assets/slide-video-bg.png" alt="movie" class="w-full h-full"
                                         data-modal-toggle="defaultModal">
-                                    <button type="button" class="absolute top-[40%] left-[50%] z-20"
-                                        data-modal-toggle="defaultModal">
-                                        <img src="./assets/PLay.png" alt="">
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div
-                            class="justify-center mx-auto text-center lg:py-24 flex flex-col lg:flex-row gap-y-10 lg:gap-y-0 gap-x-4 px-5">
-                            <div class="flex flex-col justify-center">
-                                <p class="text-[28px] leading-none text-[#24272a] mb-4">הלקוחות שלנו מספרים עלינו</p>
-                                <p class="text-xl text-[#24272a] leading-none mb-9">
-                                    ד״ר שרון טוראל, מומחית למחול מספרת
-                                    <br>
-                                    על הניסיון שלה עם אייגן
-                                </p>
-                                <div class="relative">
-                                    <img src="./assets/Movie.png" alt="movie" class="w-full"
-                                        data-modal-toggle="defaultModal">
-                                    <button type="button" class="absolute top-[40%] left-[50%] z-20"
+                                    <button type="button" class="absolute top-[39%] left-[42.1%] z-20"
                                         data-modal-toggle="defaultModal">
                                         <img src="./assets/PLay.png" alt="">
                                     </button>
@@ -483,10 +473,10 @@
 
                 <!-- If we need navigation buttons -->
                 <div
-                    class="z-20 swiper-button-prev after:text-black hidden lg:block lg:top-[50%] lg:right-[30px!important]">
+                    class="z-20 swiper-button-prev after:text-black after:font-extrabold hidden lg:block lg:top-[39.8%] lg:right-[-80px!important]">
                 </div>
                 <div
-                    class="z-20 swiper-button-next after:text-black hidden lg:block lg:top-[50%] lg:left-[30px!important]">
+                    class="z-20 swiper-button-next after:text-black after:font-extrabold hidden lg:block lg:top-[40%] lg:left-[-100px!important]">
                 </div>
 
                 <!-- If we need scrollbar -->
@@ -518,18 +508,18 @@
                     </p>
                     <div class="relative">
                         <img src="./assets/Movie.png" alt="movie" class="w-full" data-modal-toggle="defaultModal">
-                        <button type="button" class="absolute top-[40%] left-[50%] z-20"
+                        <button type="button" class="absolute top-[39%] left-[44%] z-20"
                             data-modal-toggle="defaultModal">
                             <img src="./assets/PLay.png" alt="">
                         </button>
                     </div>
                 </div>
             </div>
-            <div class="container mx-auto hidden lg:flex justify-center mt-20 px-8">
+            <div class="max-w-[1224px] mx-auto hidden lg:flex justify-center mt-[52px] px-8 lg:px-0">
                 <div class="w-1/2">
-                    <img src="./assets/face.png" alt="woman-face" class="block mx-auto">
+                    <img src="./assets/face.png" alt="woman-face" class="block">
                 </div>
-                <div class="w-1/2 flex flex-col items-start">
+                <div class="w-1/2 flex flex-col items-start lg:pr-[22px] lg:pt-[35px]">
                     <p class="text-2xl text-cus-red">איזורי הטיפול:</p>
                     <p class="text-[22px] text-cus-gray leading-none">
                         בזכות טכנולוגיית ה־Ai הבלעדית, AiGAiN לומד את מאפייני
@@ -571,44 +561,44 @@
         </div>
     </div>
 
-    <div class="hidden lg:block bg-white py-[50px] px-5">
-        <div class="container mx-auto flex w-full justify-end">
-            <div class="w-1/2 text-right">
+    <div class="hidden lg:block bg-white py-[50px] lg:px-5 xl:px-0">
+        <div class="lg:max-w-[1227px] mx-auto flex w-full justify-end pt-[18px]">
+            <div class="w-1/2 text-right pt-[6px]">
                 <p class="hero-text-heading leading-none">
                     שליטה על עוצמת האנרגיה ואיזורי ה
                 </p>
-                <p class="text-22" dir="">
+                <p class="text-22 leading-6" dir="">
                     • שליטה על תחושת החום במהלך הטיפול
                 </p>
-                <p class="text-22">
+                <p class="text-22 leading-6">
                     • 4 עוצמות אנרגיה לבחירה
                 </p>
-                <p class="text-22">
+                <p class="text-22 leading-6">
                     • 6 אזורי טיפול לנוחות מרבית
                 </p>
-                <p class="text-22">
+                <p class="text-22 leading-6">
                     • 3 דקות עבודה לכל אזור טיפול
                 </p>
 
             </div>
-            <div class="w-1/2 flex items-center">
-                <p class="ml-5 text-22 leading-6 text-cus-red">
+            <div class="w-1/2 flex pr-[35px]">
+                <p class="ml-[29px] text-22 leading-6 text-cus-red pt-[24px]">
                     אופן פעולה ייחודי
                     <br>
                     לנוחות מקסימלית:
                 </p>
-                <img src="./assets/instruct-3.png" alt="instruction 3" class="max-w-[335px]">
+                <img src="./assets/instruct-3.png" alt="instruction 3" class="max-w-[335px] max-h-[130px]">
             </div>
 
         </div>
     </div>
-    <div class="h-[68rem] bg-no-repeat bg-origin-border lg:bg-cover bg-cover bg-center relative">
+    <div class="h-[45rem] lg:h-[68rem] bg-no-repeat bg-origin-border lg:bg-cover bg-cover bg-center relative">
         <div class="absolute w-full h-full object-fill lg:object-cover overflow-hidden">
             <img src="./assets/Women-bottom.png" alt="woman-big" class="hidden lg:block w-full m-0">
             <img src="./assets/bg-woman.png" alt="woman" class="block lg:hidden w-full m-0">
         </div>
         <div class="bg-white-rbga absolute w-full bottom-0 pt-20 lg:py-6">
-            <div class="lg:container w-full mx-auto flex justify-center gap-x-16">
+            <div class="lg:max-w-[1375px] mx-auto flex justify-center gap-x-16">
                 <div class="xl:max-h-[309px] w-1/2 hidden lg:flex flex-col xl:flex-row">
                     <div
                         class="xl:w-[45%] h-full bg-[#cfa094] py-10 xl:py-0 px-5 xl:pr-16 flex flex-col justify-center text-[#15121a]">
@@ -633,9 +623,12 @@
                     </p>
                     <form class="w-full flex flex-col gap-y-4">
                         <div class="flex flex-col gap-4 xl:flex-row 2xl:flex-row">
-                            <input type="text" class="w-full xl:w-1/3 form-input" placeholder="שם מלא">
-                            <input type="text" class="w-full xl:w-1/3 form-input" placeholder="טלפון">
-                            <input type="text" class="w-full xl:w-1/3 form-input" placeholder="מייל">
+                            <input type="text" class="w-full xl:w-[211px] lg:max-h-[55px] form-input"
+                                placeholder="שם מלא">
+                            <input type="text" class="w-full xl:w-[211px] lg:max-h-[55px] form-input"
+                                placeholder="טלפון">
+                            <input type="text" class="w-full xl:w-[211px] lg:max-h-[55px] form-input"
+                                placeholder="מייל">
                         </div>
                         <div class="flex lg:flex-col xl:flex-row justify-between gap-4">
                             <div class="flex items-center gap-x-1.5">
@@ -645,7 +638,7 @@
                                 </label>
                             </div>
                             <button
-                                class="order-1 w-full lg:w-[230px] bg-white text-[#76777a] text-lg font-medium leading-6 pt-[17px] pb-[14px] pr-2 border border-cus-red rounded-full">
+                                class="order-1 w-full lg:w-[230px] xl:w-[211px] lg:max-h-[55px] bg-white text-[#76777a] text-lg font-medium leading-6 py-[6px] pr-2 border border-cus-red rounded-full">
                                 חזרו אליי
                             </button>
                         </div>
@@ -656,7 +649,7 @@
     </div>
     <div class="bg-white pt-10 pb-12">
         <div
-            class="container mx-auto flex justify-between items-center w-full px-10 md:px-14 lg:px-0 border-t-2 border-cus-gray">
+            class="max-w-[1375px] mx-auto flex justify-between items-center w-full px-10 md:px-14 lg:px-0 border-t-2 border-cus-gray">
             <div class="flex gap-5 flex-col lg:flex-row w-full  pt-6">
                 <div class="flex lg:flex-col justify-between w-full lg:w-auto">
                     <div class="ml-auto lg:ml-0">

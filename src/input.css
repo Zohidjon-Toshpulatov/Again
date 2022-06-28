@@ -14,15 +14,15 @@
     }
 
     .hero-text-para{
-        @apply text-lg leading-none
+        @apply text-[18px] leading-[23px] tracking-[0]
     }
 
     .btn{
-        @apply block pt-1.5 pb-[11px] md:pt-2 md:pb-3 rounded-2xl leading-none text-[25px] md:text-3xl lg:text-[25px] font-medium tracking-[-1px] border
+        @apply block rounded-2xl leading-none text-[25px] md:text-3xl lg:text-[25px] font-medium tracking-[-1px] border
     }
 
     .form-input{
-      @apply  bg-white text-[#24272a] text-base leading-none pt-5 pb-4 pr-2 border border-cus-gray rounded-full
+      @apply  bg-white text-[#24272a] text-base leading-none  border border-cus-gray rounded-full
     }
 }
 
