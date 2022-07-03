@@ -242,9 +242,7 @@
                     <button class="w-[154px] h-9 btn border-black">
                         <span id="increase-btn" class="px-2">+</span>
                         <span id="counter" class="leading-0 text-22px">0</span>
-                        <span id="decrease-btn" class="px-2">
-                            -
-                        </span>
+                        <span id="decrease-btn" class="px-2">-</span>
                     </button>
                 </div>
                 <div class="flex items-center justify-center lg:justify-start gap-x-4 mt-5 lg:mt-0 mb-5">
@@ -561,10 +559,9 @@
                         </svg>
                     </button>
                     <div class="px-0">
-                        <video controls>
-                            <source src="./assets/video.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        <iframe id="ytplayer" type="text/html" width="640" height="360"
+                        src="https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&origin=http://example.com"
+                        frameborder="0"></iframe>
                     </div>
                 </div>
             </div>
