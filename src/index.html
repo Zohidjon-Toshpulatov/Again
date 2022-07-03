@@ -241,7 +241,7 @@
                     </button>
                     <button class="w-[154px] h-9 btn border-black">
                         <span id="increase-btn" class="px-2">+</span>
-                        <span id="counter" class="leading-0 text-22px">0</span>
+                        <span id="counter" class="leading-0 text-22px">1</span>
                         <span id="decrease-btn" class="px-2">-</span>
                     </button>
                 </div>
@@ -694,13 +694,13 @@
     <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
     <script>
 
-        let count = 0;
+        let count = 1;
         const counter = document.getElementById('counter');
         const decreaseBtn = document.getElementById('decrease-btn');
         const increaseBtn = document.getElementById('increase-btn');
 
         decreaseBtn.addEventListener('click', () => {
-            if (count > 0) {
+            if (count > 1) {
                 count--;
                 counter.innerText = count
             }
