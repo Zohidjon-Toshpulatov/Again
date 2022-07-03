@@ -60,6 +60,7 @@
 
 
     </script>
+
 </head>
 
 <body dir="rtl" style="font-family: 'Montserrat', sans-serif">
@@ -239,7 +240,11 @@
                         הזמן עכשיו
                     </button>
                     <button class="w-[154px] h-9 btn border-black">
-                        + <span class="ml-[15px] mr-[10px] leading-0 text-22px">1</span> -
+                        <span id="increase-btn" class="px-2">+</span>
+                        <span id="counter" class="leading-0 text-22px">0</span>
+                        <span id="decrease-btn" class="px-2">
+                            -
+                        </span>
                     </button>
                 </div>
                 <div class="flex items-center justify-center lg:justify-start gap-x-4 mt-5 lg:mt-0 mb-5">
@@ -699,12 +704,29 @@
         const videoModal = document.getElementById('defaultModal');
         const video = document.querySelector('video');
         let videoSrc = video.children[0].src;
-        console.log(videoSrc)
         if (videoModal.classList.contains('hidden')) {
             videoSrc = ''
         } else {
             videoSrc = 'http://127.0.0.1:5500/src/assets/video.mp4';
         }
+
+        let count = 0;
+        const counter = document.getElementById('counter');
+        const decreaseBtn = document.getElementById('decrease-btn');
+        const increaseBtn = document.getElementById('increase-btn');
+
+        decreaseBtn.addEventListener('click', () => {
+            if (count > 0) {
+                count--;
+                counter.innerText = count
+            }
+        })
+
+        increaseBtn.addEventListener('click', () => {
+            count++;
+            counter.innerText = count
+        })
+
     </script>
 </body>
 
