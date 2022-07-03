@@ -693,19 +693,6 @@
     </div>
     <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
     <script>
-        function changeSrc(e) {
-            const activeSlide = document.getElementsByClassName('swiper-slide-active');
-            activeSlide[1].children[0].src = e.src
-        }
-
-        const videoModal = document.getElementById('defaultModal');
-        const video = document.querySelector('video');
-        let videoSrc = video.children[0].src;
-        if (videoModal.classList.contains('hidden')) {
-            videoSrc = ''
-        } else {
-            videoSrc = 'http://127.0.0.1:5500/src/assets/video.mp4';
-        }
 
         let count = 0;
         const counter = document.getElementById('counter');
